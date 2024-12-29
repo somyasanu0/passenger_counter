@@ -4,17 +4,17 @@ let count = 0
 
 function increment() {
     count += 1
-    countEl.textContent = count
+    countEl.innerText = count
 }
 
 function decrement() {
     count -= 1
-    countEl.textContent = count
+    countEl.innerText = count
 }
 
 function save() {
     let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
+    saveEl.innerText += countStr
+    countEl.innerText = 0
     count = 0
 }
